@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0;
+  width: 178px;
+  height: 112px;
+  transform: translate(-50%);
+  background: url("./images/foxminded-logo.png") no-repeat center;
+}
+.slider-wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  display: grid;
+  grid-row: 2;
+  flex: 0 0 auto;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: url(./images/bg.png);
+  transition: 0.3s;
+}
+.slide h2 {
+  align-self: end;
+  font-size: 88px;
+  text-align: center;
+}
+.slide p {
+  align-self: start;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.slider-control {
+  position: absolute;
+}
+.arrow-right {
+  right: 93px;
+  transform: rotate(-180deg);
+}
+.arrow-left {
+  left: 93px;
+}
+.arrow-right,
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 54px;
+  background: url("./images/arrow.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 150px;
+  transform: translate(-50%);
+}
+
+.dot {
+  margin-left: 40px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: transparent;
+  transition: 0.3s;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="content">
+        <h1>Create Account</h1>
+        <img src="/images/foxminded-logo.png" alt="foxminded-logo" />
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <div class="full-name form-control">
+            <div class="form-item">
+              <label>First name*</label>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Enter your first name"
+              />
+              <div class="message"></div>
+            </div>
+            <div class="form-item">
+              <label>Last name*</label>
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Enter your last name"
+              />
+              <div class="message"></div>
+            </div>
+          </div>
+
+          <div class="email form-control">
+            <div class="form-item">
+              <label>Email*</label>
+              <input type="email" name="email" placeholder="Enter your email" />
+              <div class="message"></div>
+            </div>
+          </div>
+
+          <div class="password form-control">
+            <div class="form-item">
+              <label>Password*</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+              />
+              <div class="message"></div>
+            </div>
+            <div class="form-item">
+              <label>Confirm Password*</label>
+              <input
+                type="password"
+                name="confirmedPassword"
+                placeholder="Please repeat your confirm password"
+              />
+              <div class="message"></div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="gender form-control">
+              <fieldset>
+                <legend>Gender:</legend>
+                <div class="gender-wrap">
+                  <div class="radio">
+                    <input type="radio" name="gender" value="Male" id="Male" />
+                    <label for="Male">Male</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Female"
+                      id="Female"
+                    />
+                    <label for="Female">Female</label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="message"></div>
+            </div>
+            <div class="hobbies form-control">
+              <fieldset>
+                <legend>Hobbies:</legend>
+                <div class="hobbies-wrap">
+                  <div class="radio">
+                    <input
+                      type="checkbox"
+                      name="hobbies"
+                      value="Music"
+                      id="Music"
+                    />
+                    <label for="Music">Music</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      type="checkbox"
+                      name="hobbies"
+                      value="Sports"
+                      id="Sports"
+                    />
+                    <label for="Sports">Sports</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      type="checkbox"
+                      name="hobbies"
+                      value="Travel"
+                      id="Travel"
+                    />
+                    <label for="Travel">Travel</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      type="checkbox"
+                      name="hobbies"
+                      value="Movies"
+                      id="Movies"
+                    />
+                    <label for="Movies">Movies</label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="message"></div>
+            </div>
+          </div>
+
+          <div class="income form-control">
+            <div class="form-item">
+              <label>Source of Income</label>
+              <select name="sourceOfIncome" id="sourceOfIncome">
+                <option value=""></option>
+                <option value="Employed">Employed</option>
+                <option value="Employed">Employed</option>
+                <option value="Employed">Employed</option>
+              </select>
+              <div class="message"></div>
+            </div>
+            <div class="form-item income-l">
+              <label>Income</label>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                oninput="this.style.setProperty('--value', this.value);"
+                name="income"
+                id="income"
+              />
+              <button class="btn">20K</button>
+            </div>
+            <div class="message"></div>
+          </div>
+
+          <div class="upload form-control">
+            <div class="form-item">
+              <label>Upload Profile Picture</label>
+              <div class="upload-g">
+                <input type="file" name="upload" id="upload" />
+                <button class="btn btn-dark">Choose file</button>
+                <span>No file chosen</span>
+                <div class="message"></div>
+              </div>
+            </div>
+            <div class="form-item">
+              <label>Age</label>
+              <input type="number" value="" name="age" id="age" />
+              <div class="message"></div>
+            </div>
+          </div>
+
+          <div class="about form-control">
+            <div class="form-item">
+              <label>Bio</label>
+              <textarea
+                placeholder="Tell about yourself"
+                cols="30"
+                rows="10"
+                name="bio"
+              ></textarea>
+              <div class="message"></div>
+            </div>
+          </div>
+          <div class="submit form-control">
+            <div class="form-item">
+              <input type="submit" class="btn" value="Create" />
+              <div class="message"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./src/main.ts"></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "task_2_5",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "sass":"sass -w ./src/index.scss ./src/index.css"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}

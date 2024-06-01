@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/index.scss" />
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="wrapper">
+        <div class="switch-theme light"></div>
+        <h1>Where in the world?</h1>
+        <div class="search">
+          <form class="searchByName">
+            <input
+              type="text"
+              name="country"
+              placeholder="Search for a country...."
+            />
+            <span></span>
+          </form>
+          <div class="custom-select">
+            <div class="selected-option">Select an option</div>
+            <ul class="options">
+              <li data-value="">Region</li>
+              <li data-value="Africa">Africa</li>
+              <li data-value="Americas">Americas</li>
+              <li data-value="Asia">Asia</li>
+              <li data-value="Europe">Europe</li>
+              <li data-value="Oceania">Oceania</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="country">
+          <img src="./public/c.png" alt="" />
+          <div class="country-info">
+            <h2 class="name">Portugal</h2>
+            <div class="population">Population: 11 000 000</div>
+            <div class="region">Region: Europe</div>
+            <div class="capital">Capital: Lisboa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

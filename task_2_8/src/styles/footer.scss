@@ -1,0 +1,130 @@
+footer {
+  padding: 81px 0 50px 0;
+  color: #fff;
+  background: #191919;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .contact {
+      .logo {
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 9px;
+        width: 60%;
+
+        &:last-child {
+          margin-bottom: 6px;
+        }
+      }
+
+      .socials {
+        a {
+          margin-right: 15px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .other {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+
+      .other-group {
+        display: flex;
+
+        ul:last-child {
+          margin-left: 55px;
+        }
+      }
+
+      .list-header {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      li {
+        margin-bottom: 15px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  footer {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .contact {
+        margin-bottom: 41px;
+        width: 100%;
+        text-align: center;
+
+        p {
+          width: 100%;
+        }
+      }
+
+      .other {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+        .other-group {
+          flex-direction: column;
+
+          ul:last-child {
+            margin-left: 0;
+          }
+        }
+
+        ul {
+          margin-bottom: 36px;
+          text-align: center;
+
+          .list-header {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  footer {
+    .wrapper .other .other-group {
+      flex-direction: column;
+
+      ul:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

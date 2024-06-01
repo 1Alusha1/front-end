@@ -1,0 +1,246 @@
+.ai-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+main.ai {
+  width: 80%;
+}
+aside {
+  width: 15%;
+
+  .search {
+    position: relative;
+    margin-bottom: 54px;
+
+    span {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 22px;
+      height: 22px;
+      transform: translateY(-50%);
+      background: url("../../public/svg/search.svg") no-repeat center;
+    }
+
+    input {
+      padding: 16px 28px;
+      width: 100%;
+      font-size: 20px;
+      background: transparent;
+      border: 1px solid #9a9494;
+      outline: none;
+    }
+  }
+  .topic {
+    margin-bottom: 65px;
+
+    span {
+      font-size: 14px;
+    }
+
+    li {
+      padding: 11px 31px;
+      font-size: 16px;
+      font-weight: 500;
+
+      &.active {
+        background: var(--main-color);
+        color: #fff;
+      }
+    }
+  }
+  .price {
+    .value {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    input[type="range"] {
+      margin-bottom: 15px;
+
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      padding: 0;
+      background: #e6e4ea;
+      outline: none;
+      border-radius: 5px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 28px;
+      height: 28px;
+      transform: translateY(-37%);
+      background: var(--main-color);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 9px;
+      box-shadow: rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      background: linear-gradient(
+        to right,
+        var(--main-color) 0%,
+        var(--main-color) calc(var(--value) * 1%),
+        #b8b6bf calc(var(--value) * 1%),
+        #b8b6bf 100%
+      );
+    }
+  }
+}
+
+.ai-goods {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 59px;
+
+    .ai-article {
+      position: relative;
+      margin-bottom: 48px;
+
+      img {
+        width: 100%;
+      }
+      .addToCart {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 2px 0px;
+        width: 55px;
+        height: 55px;
+        color: #fff;
+        text-align: center;
+        background: var(--main-color);
+        line-height: 20px;
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: 33px;
+          font-weight: bold;
+          line-height: 25px;
+        }
+
+        &:hover {
+          color: var(--main-color);
+          background: #fff;
+          cursor: pointer;
+
+          span {
+            color: var(--main-color);
+          }
+        }
+
+        &.active {
+          color: var(--main-color);
+          background: #fff;
+          cursor: pointer;
+
+          span {
+            color: var(--main-color);
+          }
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .name,
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .rating {
+        color: var(--main-color);
+      }
+      .category {
+        color: #969595;
+        font-size: 16px;
+      }
+    }
+  }
+  .btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 194px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
+  .ai-wrapper {
+    flex-direction: column;
+
+    aside {
+      margin-bottom: 35px;
+      width: 100%;
+
+      .topic {
+        span {
+          display: block;
+          margin-bottom: 17px;
+        }
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 18px 14px;
+
+        li {
+          text-align: center;
+          border: 1px solid var(--main-color);
+          border-radius: 7px;
+          color: #ff3d00;
+        }
+      }
+
+      .price {
+        span {
+          display: block;
+          margin-bottom: 17px;
+        }
+      }
+    }
+    main {
+      width: 100%;
+    }
+  }
+  .ai {
+    .wrapper {
+      grid-template-columns: 1fr;
+
+      .ai-article {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .ai-wrapper .ai-article .info {
+    gap: 0px;
+
+    .name,
+    .price,
+    .rating,
+    .category {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "task_2_8",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "sass": "sass -w ./src/styles/index.scss ./src/index.css"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "sass": "^1.77.1"
+  }
+}

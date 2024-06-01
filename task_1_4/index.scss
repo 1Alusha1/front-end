@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+.foxpacman {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  animation: pacman 0.6s infinite;
+
+  div {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: -750px;
+      width: 25px;
+      height: 25px;
+      transform: translateY(-50%);
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    &:nth-child(1) {
+      animation: ball 1.5s 0.3s infinite linear;
+    }
+    &:nth-child(2) {
+      animation: ball 1.5s 0.6s infinite linear;
+    }
+    &:nth-child(3) {
+      animation: ball 1.5s .9s infinite linear;
+    }
+    &:nth-child(4) {
+      animation: ball 1.5s 1.2s infinite linear;
+    }
+    &:nth-child(5) {
+      animation: ball 1.5s 1.5s infinite linear;
+    }
+    &:nth-child(6) {
+      animation: ball 1.5s 1.8s infinite linear;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 80px solid #f2682a;
+    border-radius: 50%;
+    border-right: 80px solid transparent;
+    animation: animate1 linear 0.35s infinite;
+  }
+  &:after {
+    animation: animate2 linear 0.35s infinite;
+  }
+}
+
+.triangle {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  background: transparent;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 38px;
+    bottom: -32px;
+    transform: rotate(44deg);
+    border: 43px solid transparent;
+    border-left: 40px solid #f2682a;
+  }
+}
+.triangle2 {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  background: transparent;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 66px;
+    bottom: 78px;
+    transform: rotate(289deg);
+    border: 10px solid transparent;
+    border-left: 40px solid #f2682a;
+  }
+}
+
+.tail {
+  position: absolute;
+  top: 64px;
+  left: -60px;
+  width: 100px;
+  height: 93px;
+  background: url(./images/tail.png);
+}
+@keyframes animate1 {
+  0% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+@keyframes ball {
+  20%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    right: 150px;
+  }
+}

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .logo {
+    padding: 35px 0;
+    text-align: center;
+  }
+  .search {
+    input {
+      padding: 14px;
+      width: 100%;
+      font-weight: 300;
+      font-size: 14px;
+      border: 1px solid #ababab;
+      border-radius: 10px;
+    }
+    span {
+      display: block;
+      padding: 10px 0 10px 0;
+      color: #676767;
+      font-weight: 300;
+    }
+  }
+  .current-day {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    margin-bottom: 27px;
+    padding: 12px;
+    color: #fff;
+    background: #ff4f00;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .info {
+      text-align: center;
+
+      span:nth-child(1) {
+        font-size: 41px;
+      }
+      span:nth-child(2) {
+        font-size: 14px;
+      }
+    }
+    .city {
+      font-size: 14px;
+    }
+  }
+  ul {
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid #dddddd;
+
+      .day {
+        font-size: 17px;
+      }
+      .info {
+        font-size: 14px;
+      }
+      .temp {
+        .day,
+        .night {
+          font-size: 14px;
+
+          span {
+            display: block;
+            text-align: right;
+            font-size: 9px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

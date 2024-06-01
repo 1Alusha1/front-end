@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1715932402535,
+    "name": "Stylish Chair",
+    "price": 1000,
+    "alt": "Stylish chair fox",
+    "rating": 5,
+    "type": "Furniture",
+    "img": "1.png"
+  },
+  {
+    "id": 1715932402536,
+    "name": "Elegant Sofa",
+    "price": 300,
+    "alt": "Elegant sofa fox",
+    "rating": 4.5,
+    "type": "Furniture",
+    "img": "2.png"
+  },
+  {
+    "id": 1715932402537,
+    "name": "Modern Table",
+    "price": 150,
+    "alt": "Modern table fox",
+    "rating": 4,
+    "type": "Furniture",
+    "img": "3.png"
+  },
+  {
+    "id": 1715932402538,
+    "name": "Cozy Armchair",
+    "price": 200,
+    "alt": "Cozy armchair fox",
+    "rating": 5,
+    "type": "Furniture",
+    "img": "4.png"
+  },
+  {
+    "id": 1715932402539,
+    "name": "Rustic Bed",
+    "price": 400,
+    "alt": "Rustic bed fox",
+    "rating": 4.8,
+    "type": "Furniture",
+    "img": "5.png"
+  },
+  {
+    "id": 1715932402540,
+    "name": "Wooden Desk",
+    "price": 180,
+    "alt": "Wooden desk fox",
+    "rating": 4.2,
+    "type": "Furniture",
+    "img": "6.png"
+  },
+  {
+    "id": 1715932402541,
+    "name": "Office Chair",
+    "price": 140,
+    "alt": "Office chair fox",
+    "rating": 4.5,
+    "type": "Office",
+    "img": "7.png"
+  },
+  {
+    "id": 1715932402542,
+    "name": "Bookshelf",
+    "price": 220,
+    "alt": "Bookshelf fox",
+    "rating": 4.7,
+    "type": "Furniture",
+    "img": "8.png"
+  },
+  {
+    "id": 1715932402543,
+    "name": "Dining Table",
+    "price": 350,
+    "alt": "Dining table fox",
+    "rating": 5,
+    "type": "Furniture",
+    "img": "8.png"
+  },
+  {
+    "id": 1715932402544,
+    "name": "Kitchen Stool",
+    "price": 80,
+    "alt": "Kitchen stool fox",
+    "rating": 4,
+    "type": "Kitchen",
+    "img": "1.png"
+  },
+  {
+    "id": 1715932402545,
+    "name": "Wardrobe",
+    "price": 500,
+    "alt": "Wardrobe fox",
+    "rating": 4.9,
+    "type": "Furniture",
+    "img": "2.png"
+  },
+  {
+    "id": 1715932402546,
+    "name": "Nightstand",
+    "price": 100,
+    "alt": "Nightstand fox",
+    "rating": 4.3,
+    "type": "Bedroom",
+    "img": "3.png"
+  },
+  {
+    "id": 1715932402547,
+    "name": "TV Stand",
+    "price": 250,
+    "alt": "TV stand fox",
+    "rating": 4.6,
+    "type": "Living Room",
+    "img": "4.png"
+  },
+  {
+    "id": 1715932402548,
+    "name": "Coffee Table",
+    "price": 130,
+    "alt": "Coffee table fox",
+    "rating": 4.5,
+    "type": "Foxs kids",
+    "img": "5.png"
+  },
+  {
+    "id": 1715932402549,
+    "name": "Outdoor Bench",
+    "price": 160,
+    "alt": "Outdoor bench fox",
+    "rating": 4.4,
+    "type": "Foxs kids",
+    "img": "6.png"
+  },
+  {
+    "id": 1715932402550,
+    "name": "Patio Chair",
+    "price": 90,
+    "alt": "Patio chair fox",
+    "rating": 4.2,
+    "type": "Foxs kids",
+    "img": "7.png"
+  },
+  {
+    "id": 1715932402551,
+    "name": "Bar Stool",
+    "price": 110,
+    "alt": "Bar stool fox",
+    "rating": 4.3,
+    "type": "Forest",
+    "img": "8.png"
+  },
+  {
+    "id": 1715932402552,
+    "name": "Recliner",
+    "price": 280,
+    "alt": "Recliner fox",
+    "rating": 4.7,
+    "type": "Forest",
+    "img": "7.png"
+  },
+  {
+    "id": 1715932402553,
+    "name": "Futon",
+    "price": 230,
+    "alt": "Futon fox",
+    "rating": 4.5,
+    "type": "Forest",
+    "img": "1.png"
+  },
+  {
+    "id": 1715932402554,
+    "name": "Lounge Chair",
+    "price": 190,
+    "alt": "Lounge chair fox",
+    "rating": 4.8,
+    "type": "Forest",
+    "img": "2.png"
+  }
+]

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All items</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="menu"><span></span><span></span><span></span></div>
+          <div class="logo">
+            <img src="./public/images/footer-logo.png" alt="" />
+          </div>
+          <ul>
+            <li><a href="/">SHOP</a></li>
+            <li><a href="/main-page">Mainpage</a></li>
+            <li><a href="/history">Our history</a></li>
+            <li><a href="/all-items" class="active">All items</a></li>
+            <li class="close"><span></span></li>
+          </ul>
+          <div class="user">
+            <img src="./public/icons/basket-dark.svg" alt="Basket icon" />
+            <img src="./public/icons/fox-dark.svg" alt="Fox icon" />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="basket">
+      <div class="wrapper">
+        <div class="basket-close"><span></span></div>
+        <p>box</p>
+        <h2>Your Bag</h2>
+        <div class="goods-list">
+          <div class="goods-list-wrapper"></div>
+        </div>
+        <div class="total">
+          <p>
+            <span>Total:</span>
+            <span class="sum"><span>
+          </p>
+          <button class="btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div class="head">
+      <a href="/">Home/All items</a>
+      <h1>All Itmes</h1>
+    </div>
+    <div class="container">
+      <div class="ai-wrapper">
+        <aside>
+          <form class="search">
+            <input type="text" placeholder="Search" />
+            <span></span>
+          </form>
+          <div class="topic">
+            <span>Topic</span>
+            <ul>
+              <li>All</li>
+              <li class="active">Forest</li>
+              <li>Foxs kids</li>
+              <li>Other</li>
+            </ul>
+          </div>
+          <div class="price">
+            <span>Price</span>
+            <input
+              type="range"
+              min="0"
+              max="1000"
+              value="0"
+              oninput="this.style.setProperty('--value', (this.value/1000)*100);"
+            />
+            <div class="value">Value: $0</div>
+          </div>
+        </aside>
+        <main class="ai">
+          <div class="ai-goods">
+            <div class="wrapper"></div>
+            <button class="btn">All foxes</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="contact">
+            <div class="logo">
+              <img src="./public/images/footer-logo.png" alt="foxminded logo" />
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur consectetur</p>
+            <p>Call us : 8956 3254 7887</p>
+            <div class="socials">
+              <a href="">
+                <img src="./public/icons/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="">
+                <img src="./public/icons/telegram.svg" alt="Telegram" />
+              </a>
+              <a href="">
+                <img src="./public/icons/twitter.svg" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+          <div class="other">
+            <ul>
+              <div class="list-header">Shop</div>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+            </ul>
+            <ul>
+              <div class="list-header">Products</div>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+            </ul>
+            <ul>
+              <div class="list-header">Collection</div>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a href="">Lorem ipsum</a>
+              </li>
+            </ul>
+            <div class="other-group">
+              <ul>
+                <div class="list-header">Weekly updates</div>
+                <li>
+                  <a href="">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="">Lorem ipsum</a>
+                </li>
+              </ul>
+              <ul>
+                <div class="list-header">About us</div>
+                <li>
+                  <a href="">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="">Lorem ipsum</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">Storelogo, 2023 All rights reserved</div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

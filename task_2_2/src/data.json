@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "title": "Red smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 2547,
+    "imgPath": "fox.png",
+    "type": "Red fox"
+  },
+  {
+    "id": 1,
+    "title": "Pet smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 1000,
+    "imgPath": "pet-smile-fox.png",
+    "type": "Pet fox"
+  },
+  {
+    "id": 2,
+    "title": "Pet smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 1000,
+    "imgPath": "pet-smile-white-fox.png",
+    "type": "Pet fox"
+  },
+  {
+    "id": 3,
+    "title": "Kit smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 1000,
+    "imgPath": "kit-smile-fox.png",
+    "type": "Kit fox"
+  },
+  {
+    "id": 4,
+    "title": "Arctic smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 4659,
+    "imgPath": "arctic-smile-fox.png",
+    "type": "Arctic fox"
+  },
+  {
+    "id": 5,
+    "title": "Fennec smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 9897,
+    "imgPath": "fennec-smile-fox.png",
+    "type": "Fennec fox"
+  },
+  {
+    "id": 6,
+    "title": "Kit smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 37,
+    "imgPath": "kit-smile-gray-fox .png",
+    "type": "Kit fox"
+  },
+  {
+    "id": 7,
+    "title": "Red smile fox",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fabellas assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "likes": 1100,
+    "imgPath": "red-smile-fox.png",
+    "type": "Red fox"
+  }
+]
