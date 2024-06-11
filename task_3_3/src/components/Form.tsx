@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { userSchema, User } from "../userSchema";
 import { z } from "zod";
-import { isConfirmedPassword } from "../validation";
+import { isConfirmedPassword } from "../isConfirmedPassword.ts";
+
+interface ValidationError {
+  path: string | number;
+  message?: string;
+}
+
 const Form: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errors, setErrors] = useState<any | null>(null);
+  const [errors, setErrors] = useState<ValidationError[]>([]);
   const [user, setUser] = useState<User>({
     firstName: "",
     lastName: "",
@@ -55,7 +61,7 @@ const Form: React.FC = () => {
         throw confirmedPasswordValidation.error;
       }
 
-      setErrors(null);
+      setErrors([]);
       console.log("Form submitted successfully!");
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -65,11 +71,11 @@ const Form: React.FC = () => {
             message: error.message,
           }))
         );
-      } else if (error instanceof Error) {
-        setErrors([{ path: "password", message: error.message }]);
       }
     }
   };
+  console.log(errors);
+
   return (
     <form onSubmit={submitForm}>
       <div className="full-name form-control">
@@ -332,7 +338,7 @@ const Form: React.FC = () => {
           <button className="btn">20K</button>
         </div>
         {isSubmitted && (
-          <p className="error income-l-e">
+          <p className="error income-left-element">
             {renderError("income", errors)?.message}{" "}
           </p>
         )}
@@ -341,7 +347,7 @@ const Form: React.FC = () => {
       <div className="upload form-control ">
         <div className="form-item">
           <label htmlFor="upload">Upload Profile Picture</label>
-          <div className="upload-g">
+          <div className="upload-group">
             <input
               type="file"
               onChange={(e) =>
@@ -411,7 +417,12 @@ const Form: React.FC = () => {
       </div>
       <div className="submit form-control">
         <div className="form-item">
-          <input type="submit" className="btn" value="Create" data-testid="create" />
+          <input
+            type="submit"
+            className="btn"
+            value="Create"
+            data-testid="create"
+          />
         </div>
       </div>
     </form>

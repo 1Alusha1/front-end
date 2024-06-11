@@ -28,7 +28,7 @@ export const userSchema = z.object({
   sourceOfIncome: z
     .string()
     .nonempty({ message: "Source of income is required" }),
-  income: z.number().min(1, { message: "Incom is required" }),
+  income: z.number().min(1, { message: "Income is required" }),
   upload: z.string().nonempty({ message: "Upload is required" }),
   age: z.number().min(18, { message: "You must be 18 years old" }),
   bio: z.string().nonempty({ message: "Bio is required" }),

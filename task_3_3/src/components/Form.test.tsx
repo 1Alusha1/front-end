@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 // import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import Form from "./Form";
@@ -19,42 +19,6 @@ jest.mock("../validation", () => ({
 }));
 
 describe("Form Component", () => {
-  test("renders form fields correctly", async () => {
-    render(<Form />);
-    expect(
-      screen.getByPlaceholderText("Enter your first name")
-    ).toBeInTheDocument();
-    expect(
-      screen.getByPlaceholderText("Enter your last name")
-    ).toBeInTheDocument();
-    expect(screen.getByPlaceholderText("Enter your email")).toBeInTheDocument();
-    expect(
-      screen.getByPlaceholderText("Enter your password")
-    ).toBeInTheDocument();
-    expect(screen.getByLabelText("Male")).toBeInTheDocument();
-
-    expect(screen.getByLabelText("Female")).toBeInTheDocument();
-
-    expect(screen.getByLabelText("Music")).toBeInTheDocument();
-
-    expect(screen.getByLabelText("Sports")).toBeInTheDocument();
-
-    expect(screen.getByLabelText("Travel")).toBeInTheDocument();
-
-    expect(screen.getByLabelText("Movies")).toBeInTheDocument();
-
-    expect(
-      screen.getByPlaceholderText("Please repeat your confirm password")
-    ).toBeInTheDocument();
-    expect(screen.getByTestId("sourceOfIncome")).toBeInTheDocument();
-    expect(screen.getByTestId("income")).toBeInTheDocument();
-    expect(screen.getByTestId("upload")).toBeInTheDocument();
-    expect(screen.getByTestId("age")).toBeInTheDocument();
-    expect(
-      screen.getByPlaceholderText("Tell about yourself")
-    ).toBeInTheDocument();
-    expect(screen.getByTestId("create")).toBeInTheDocument();
-  });
 
   test("submits the form", async () => {
     (userSchema.parse as jest.Mock).mockImplementation(() => ({

@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "./assets/foxminded-logo.png";
-
+import logo from "../assets/foxminded-logo.png";
 const Header = () => {
   return (
     <header>

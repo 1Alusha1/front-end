@@ -20,6 +20,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "setup.test.js"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "setup.test.js",
+    "src/isConfirmedPassword.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -6,7 +6,7 @@ export const isConfirmedPassword = (
   const confirmedPasswordSchema = z.string();
   const result = confirmedPasswordSchema.safeParse(confirmedPassword);
   if (!result.success) return result;
-
+  console.log(password, confirmedPassword);
   if (password !== confirmedPassword) {
     return {
       success: false,
@@ -19,5 +19,6 @@ export const isConfirmedPassword = (
       ]),
     };
   }
+
   return result;
 };
