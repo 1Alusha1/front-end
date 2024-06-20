@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+html {
+  background: #171717;
+}
+
+.row {
+  height: 90px;
+  width: 90px;
+}
+
+.col {
+  height: 90px;
+  width: 90px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #7d7d7d;
+}
+
+.border-left {
+  border-left: 1px solid #7d7d7d;
+}
+
+/*# sourceMappingURL=index.css.map */
