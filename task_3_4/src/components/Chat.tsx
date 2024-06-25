@@ -68,6 +68,7 @@ const Chat = ({ player }: { player: number }) => {
         <input
           type="text"
           value={message}
+          onKeyDown={(e) => e.code === "Enter" && send()}
           onChange={(e) => setMessage(e.target.value)}
         />
         <img src={sendButton} onClick={send} alt="send button icon" />

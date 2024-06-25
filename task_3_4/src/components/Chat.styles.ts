@@ -35,6 +35,17 @@ export const ChatFieldBody = styled.div`
   padding: 0px 20px;
   overflow-y: scroll;
 
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: #222222;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid #ef9919;
+  }
+
   .p1 {
     background: #737373;
   }

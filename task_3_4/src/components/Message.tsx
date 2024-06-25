@@ -65,7 +65,7 @@ const UserMessage = ({ player }: { player: number }) => {
     if (checkDraw(field)) {
       setMessage({
         player: player,
-        message: "Drow",
+        message: "Draw",
       });
     }
   };
