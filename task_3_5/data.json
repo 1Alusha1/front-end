@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "RILOOP Computer Chair, Gaming Chair, Ergonomic Swivel Chair Chair with Footrest, Executive Chair with Arms and Wheels Adjustableng Load-Beacapacity and with Massage Multifunctional Chair/Black",
+    "price": 398,
+    "img": "RILOOP.png",
+    "alt": "RILOOP chair"
+  },
+  {
+    "id": 2,
+    "name": "AKRacing AK-Opal Gaming Chair, Black",
+    "price": 149.99,
+    "img": "AKRracing.png",
+    "alt": "AKRracing chair"
+  },
+  {
+    "id": 3,
+    "name": "Lorell Chair, Red/Black",
+    "price": 199.99,
+    "img": "Lorell.png",
+    "alt": "Lorell chair"
+  }
+]
